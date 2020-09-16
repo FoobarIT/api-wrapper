@@ -1,0 +1,38 @@
+<%- include('./layout/header.ejs')%>
+
+
+
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-0 text-gray-800">Documentation</h1>
+                    <a href="" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="lni lni-star"></i> Beginner Tier</a>
+                </div>
+
+                <!-- Content Row -->
+                <div>
+                    <h2>REST</h2>
+                    <h6>BASE URL: https://localhost:8080/api/v1/</h6>
+                    <small class="text-danger">Il est possible que ce lien change dans les versions à venir.</small>
+                    <p>Toutes les requêtes vers l'url sont en 'https' et rend une réponse en JSON uniquement.</p>
+                    <pre style="background: #2d2e33;width: 50%; border-radius: 15px;" class="prettyprint lang-js">
+
+ {
+    "characters": "https://localhost:8080/api/v1/characters",
+ }
+                    </pre>
+
+                    <p>Les deux principal ressource:</p>
+                    <ul>
+                        <li>Characters - Récupére la liste complète des personnages</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+<%- include('./layout/footer.ejs')%>

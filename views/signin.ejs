@@ -1,0 +1,29 @@
+<%- include('./layout/header.ejs')%>
+
+<section class="login-head">
+    <h1 class="text-center">SILICONV</h1>
+    <h6 class="text-center">Panel</h6>
+</section>
+
+
+<section class="login mx-auto">
+    <div class="container">
+        <form role="form" method="post" action="/login">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="/register">I do not have an account</a>
+        </form>
+    </div>
+
+</section>
+
+
+<%- include('./layout/footer.ejs')%>

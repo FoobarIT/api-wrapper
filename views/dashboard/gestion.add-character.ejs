@@ -1,0 +1,91 @@
+<%- include('./layout/header.ejs')%>
+
+
+
+<!-- End of Topbar -->
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Gestion - Add Character</h1>
+        <a href="" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="lni lni-star"></i> Beginner Tier</a>
+    </div>
+
+    <form method="post" action="/gestion/add-character" enctype="multipart/form-data">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input name="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Erlich Bachman">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Genre</label>
+                        <input name="gender" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Man">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Age</label>
+                        <input name="age" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: 32">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Hair Color</label>
+                        <input name="hair_color" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Orange">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Birthday</label>
+                        <input name="birthday" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: 6th of April (1981)">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Status</label>
+                        <input name="status" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Whereabouts Unknown, legally dead">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Marital Status</label>
+                        <input name="marital_status" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Single">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Occupation</label>
+                        <input name="occupation" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Software Designer">
+                    </div>
+
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Adress</label>
+                        <input name="adress" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Tibet, China">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Strengths</label>
+                        <input name="strengths" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Programming">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Season</label>
+                        <input name="season" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: 1-4">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">First Episode</label>
+                        <input name="first_episode" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Minimum Viable Product">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Last Episode</label>
+                        <input name="last_episode" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: Server Error">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Portrayer</label>
+                        <input name="portrayer" type="text" class="form-control" id="exampleFormControlInput1" placeholder="ex: T.J Miller">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Example file input</label>
+                        <input name="image" type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send new character</button>
+        </div>
+
+    </form>
+
+</div>
+<%- include('./layout/footer.ejs')%>

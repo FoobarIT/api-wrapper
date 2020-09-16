@@ -1,0 +1,38 @@
+<%- include('./layout/header.ejs')%>
+
+
+
+
+
+
+<div class="container-fluid">
+
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Support</h1>
+        <a href="" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="lni lni-star"></i> Beginner Tier</a>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Subject</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Priority</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Normal</option>
+                <option>Urgent</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Your Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Open it</button>
+    </form>
+
+</div>
+
+
+
+<%- include('./layout/footer.ejs')%>
